@@ -16,11 +16,13 @@ namespace MvcKutuphane.Controllers
             var degerler = db.TBLDUYURULAR.ToList();
             return View(degerler);
         }
+
         [HttpGet]
         public ActionResult YeniDuyuru()
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult YeniDuyuru(TBLDUYURULAR t)
         {
@@ -28,6 +30,7 @@ namespace MvcKutuphane.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         public ActionResult DuyuruSil(int id)
         {
             var duyuru = db.TBLDUYURULAR.Find(id);
@@ -35,11 +38,13 @@ namespace MvcKutuphane.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
         public ActionResult DuyuruDetay(TBLDUYURULAR p)
         {
             var duyuru = db.TBLDUYURULAR.Find(p.ID);
             return View("DuyuruDetay", duyuru);
         }
+
         public ActionResult DuyuruGuncelle(TBLDUYURULAR t)
         {
             var duyuru = db.TBLDUYURULAR.Find(t.ID);
