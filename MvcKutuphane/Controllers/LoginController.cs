@@ -8,8 +8,10 @@ using System.Web.Security;
 
 namespace MvcKutuphane.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
+        
         // GET: Login
         DBKUTUPHANEEntities db = new DBKUTUPHANEEntities();
         public ActionResult GirisYap()
