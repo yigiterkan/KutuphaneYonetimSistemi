@@ -40,6 +40,11 @@ namespace MvcKutuphane.Controllers
         }
         public PartialViewResult Partial1()
         {
+            var uyemail = (string)Session["Mail"].ToString();
+            var gelensayisi = db.TBLMESAJLAR.Where(x => x.ALICI == uyemail).Count();
+            ViewBag.d1 = gelensayisi;
+            var gidensayisi = db.TBLMESAJLAR.Where(x => x.GONDEREN == uyemail).Count();
+            ViewBag.d2 = gidensayisi;
             return PartialView();
         }
     }
