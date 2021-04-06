@@ -2206,13 +2206,6 @@
     <Content Include="web3\typo.html" />
     <Content Include="web3\validation.html" />
     <Content Include="web3\w3layouts-License.txt" />
-    <Content Include="webhava\css\style.css" />
-    <Content Include="webhava\images\bg.jpg" />
-    <Content Include="webhava\images\img1.jpg" />
-    <Content Include="webhava\index.html" />
-    <Content Include="webhava\js\jquery-2.1.4.min.js" />
-    <Content Include="webhava\js\skycons.js" />
-    <Content Include="webhava\w3layouts-License.txt" />
     <Content Include="weblogin\css\fontawesome-all.css" />
     <Content Include="weblogin\css\style.css" />
     <Content Include="weblogin\images\cover4.jpg" />
@@ -2622,8 +2615,6 @@
     <Content Include="web\vendor\jquery\jquery.slim.min.map" />
     <Content Include="Views\vitrin\Index.cshtml" />
     <Content Include="Views\istatistik\Index.cshtml" />
-    <Content Include="Views\istatistik\Hava.cshtml" />
-    <Content Include="Views\istatistik\HavaKart.cshtml" />
     <Content Include="Views\istatistik\Galeri.cshtml" />
     <Content Include="Views\istatistik\LinqKart.cshtml" />
     <Content Include="web3\fonts\fontawesome-webfont.eot" />
